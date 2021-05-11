@@ -12,11 +12,13 @@
     <div id="app">
 
         <h1>Delle belle mail che mi ha dato il server:</h1>
-        <ul>
+        <ul v-if="loading === false">
             <li v-for="mail in randomMail">
                 {{mail}}
             </li>
         </ul>
+
+        <p v-else>Caricamento il corso...</p>
 
     </div>
     
